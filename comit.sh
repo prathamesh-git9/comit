@@ -12,7 +12,7 @@ for (( i=1; i<=389; i++ )); do
         # Determine the number of commits for this day
         num_commits=1
         if [ $((RANDOM % 2)) -eq 0 ]; then
-            num_commits=$((RANDOM % 3 + 2))  # Make 4 or 3 commits
+            num_commits=$((RANDOM % 5 + 4))  # Make 4 or 3 commits
         fi
 
         # Loop to make multiple commits
