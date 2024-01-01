@@ -7,11 +7,11 @@ current_date=$start_date
 # Loop for 389 days
 for (( i=1; i<=389; i++ )); do
     # Determine if it's a commit day or not (60% chance of a commit)
-    commit_day=$((RANDOM % 10))
+    commit_day=$((RANDOM % 5))
     if [ $commit_day -lt 2 ]; then
         # Determine the number of commits for this day
         num_commits=1
-        if [ $((RANDOM % 9)) -eq 0 ]; then
+        if [ $((RANDOM % 2)) -eq 0 ]; then
             num_commits=$((RANDOM % 3 + 2))  # Make 4 or 3 commits
         fi
 
