@@ -11,8 +11,8 @@ for (( i=1; i<=389; i++ )); do
     if [ $commit_day -lt 2 ]; then
         # Determine the number of commits for this day
         num_commits=1
-        if [ $((RANDOM % 2)) -eq 0 ]; then
-            num_commits=$((RANDOM % 4 + 3))  # Make 4 or 3 commits
+        if [ $((RANDOM % 9)) -eq 0 ]; then
+            num_commits=$((RANDOM % 3 + 2))  # Make 4 or 3 commits
         fi
 
         # Loop to make multiple commits
